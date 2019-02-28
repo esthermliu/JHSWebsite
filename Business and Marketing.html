@@ -3,6 +3,9 @@
 <head>
   <title>CTE Program</title>
   <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="BusinessandMarketingMedia.css">
 </head>
 <style>
   * {
@@ -189,6 +192,15 @@ li a:hover {
   object-fit: cover;
   overflow: hidden;
  }
+ 
+ .Hamburger {
+   display: none;
+ }
+ 
+ .overlay {
+   display: none;
+ }
+ 
  </style>
 
 <body>
@@ -203,10 +215,45 @@ li a:hover {
 	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
     </ul>
   </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a class="active"  href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="MusicAlbum2.html">Cambridge Program</a>
+	 </div>
+	<a href="esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+  
 </header>
 <div>
 
 </div>
+ <div class="videoholder">
+  <video autoplay muted loop id="Businessandmarketing">
+  <source src="Businessandmarketingvideoactual.mp4" type="video/mp4">
+</video>
+  </div>
 <div class="overallbody">
   <div class="leftnav">
 	  <a class="Marketing" href="Marketing Courses.html"><p>Marketing</p></a>
@@ -214,11 +261,7 @@ li a:hover {
 	  <a class="Digitaldesign" href="DigitalDesign.html"><p>Digital Design</p></a>
 	  <a class="Personalfinance" href="PersonalFinance.html"><p>Personal Finance/<br>Career Work Experience</p></a>
   </div>
-  <div class="videoholder">
-  <video autoplay muted loop id="Businessandmarketing">
-  <source src="Businessandmarketingvideoactual.mp4" type="video/mp4">
-</video>
-  </div>
+ 
 </div>
 
 

@@ -1,4 +1,5 @@
-  <div id="myNav" class="overlay">
+<span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
    <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
   <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -26,6 +27,9 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 </script>
+.Hamburger {
+  display: none;
+}
 
 .overlay {
   display: none;
@@ -38,3 +42,9 @@ function closeNav() {
 <footer class="footer2">
   <p>Copyright &copy; 2018 by the Juanita High School Technology Student Association</p>
 </footer>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  
+  
+  @media screen and (max-width: 414px) {

@@ -3,6 +3,9 @@
 <head>
   <title>CTE Program</title>
   <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+   <link rel="stylesheet" media="screen and (max-width: 414px)" href="ChildDevelopmentMedia.css">
 </head>
 <style>
   * {
@@ -171,6 +174,18 @@ h2 {
   margin: 5px 0% 5px;
   line-height: 1.7em;
 }
+
+.Hamburger {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+.footer2 {
+  display: none;
+}
 </style>
 
 
@@ -187,6 +202,35 @@ h2 {
 	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
     </ul>
   </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a class="active" href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="MusicAlbum2.html">Cambridge Program</a>
+	 </div>
+	<a href="esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </header>
 <div>
 <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
@@ -221,7 +265,7 @@ h2 {
   <p>Taught by: FILL IN</p><br>
   <p> Course Description: This introductory course teaches students how children
 	grow and learn. The main focus of  the lcass is the physical, emotional, social, and intellectual development of children before birth through the age of 6.
-	Students will be taught the knowledge and skills needed by parents and professional childcare providers by participating in vraious children's activities. 
+	Students will be taught the knowledge and skills needed by parents and professional childcare providers by participating in various children's activities. 
 	They will also get to visit local elementary schools for off-site hands on experiences. Those who choose to attend Bellevue College will be able to receive college credit from this course. 
 	This course may also be applied toward
 	the Family and Consumer Sciences Certificate. Most assigned work is
@@ -243,6 +287,9 @@ h2 {
 
 </body>
 <footer class="footer">
+  <p>Copyright &copy; 2018 by the Juanita High School Technology Student Association</p>
+</footer>
+<footer class="footer2">
   <p>Copyright &copy; 2018 by the Juanita High School Technology Student Association</p>
 </footer>
 </html>

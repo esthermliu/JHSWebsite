@@ -3,6 +3,9 @@
 <head>
   <title>Family and Consumer Sciences</title>
   <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+    <link rel="stylesheet" media="screen and (max-width: 414px)" href="FamilyConsumerScienceMedia.css">
 </head>
 <style>
   * {
@@ -89,6 +92,7 @@ li a:hover {
   display: flex;
   margin: 0;
   padding: 0;
+  overflow: hidden;
  }
  
  .leftnav {
@@ -114,7 +118,6 @@ li a:hover {
  .leftnav {
   width: 25%;
   height: 20%;
-  display
  }
  
   .leftnav a {
@@ -218,6 +221,14 @@ li a:hover {
   overflow: hidden;
  }
  
+ .Hamburger {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
  </style>
 <script src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
 <script>
@@ -244,11 +255,46 @@ li a:hover {
 	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
     </ul>
   </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a class="active" href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="MusicAlbum2.html">Cambridge Program</a>
+	 </div>
+	<a href="esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </header>
 <div>
 
 </div>
 <div class="overallbody">
+  <div class="slideShowContainer">
+	  <img src="JHSfoods.jpg"/>
+	  <img src="JHSkitchen.jpg"/>
+	  <img src="PreparingStudents.jpg"/>
+	  <img src="4.jpg"/>
+  </div>
   <div class="leftnav">
 	  <a class="ChildDevelopment" href="ChildDevelopment.html"><p>Child Development</p></a>
 	  <a class="Psychology" href="Psychology.html"><p>Psychology</p></a>
@@ -256,13 +302,10 @@ li a:hover {
 	  <a class="InteriorDesign" href="InteriorDesign.html"><p>Interior Design</p></a>
 	  <a class="TeachingAcademy" href="TeachingAcademy.html"><p>Teaching Academy</p></a>
   </div>
-  <div class="slideShowContainer">
-	  <img src="JHSfoods.jpg"/>
-	  <img src="JHSkitchen.jpg"/>
-	  <img src="PreparingStudents.jpg"/>
-	  <img src="4.jpg"/>
-  </div>
+
 </div>
+
+
 
 
 

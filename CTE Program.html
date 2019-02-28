@@ -3,6 +3,9 @@
 <head>
   <title>CTE Program</title>
   <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="CTEProgramMedia.css">
 </head>
 <style>
   * {
@@ -243,6 +246,18 @@ li a:hover {
    font-family: Verdana, Geneva, sans-serif;
    text-transform: uppercase;
  }
+ 
+ .Hamburger {
+   display: none;
+ }
+ 
+ .overlay {
+   display: none;
+ }
+ 
+ .footer2 {
+   display: none;
+ }
 </style>
 
 
@@ -258,6 +273,36 @@ li a:hover {
 	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
     </ul>
   </div>
+  
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a class="active" href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="MusicAlbum2.html">Cambridge Program</a>
+	 </div>
+	<a href="esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </header>
 <div>
 <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
@@ -299,6 +344,9 @@ li a:hover {
 
 </body>
 <footer class="footer">
+  <p>Copyright &copy; 2018 by the Juanita High School Technology Student Association</p>
+</footer>
+<footer class="footer2">
   <p>Copyright &copy; 2018 by the Juanita High School Technology Student Association</p>
 </footer>
 </html>
