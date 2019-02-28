@@ -10,9 +10,6 @@
     padding: 0;
   }
 
- body {
-   overflow: hidden;
- }
   
 header {
   height: 70px;
@@ -280,17 +277,17 @@ li a:hover {
     <ul>      
       <li><a href="index.html">Home</a></li>
 	  <li><a href="TSA Chapter.html">TSA Chapter</a></li>
-	  <li><a class="active" href="CTE Program.html">Curriculum</a></li>
-	  <li><a href="Design Brief.html">Design Brief</a></li>  
+	  <li><a class="active" href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a></li>  
     </ul>
   </div>
 </header>
 
 <div class="careertech">
   <h1>CTE Program</h1>
-  <button id="careertechexplore"><a href="CTE Program.html">Explore the CTE Program at JHS</a></button>
+  <button id="careertechexplore"><a id="new" href="CTE Program.html">Explore the CTE Program at JHS</a></button>
 </div>
-<a id="Camprogram"><div class="Cambridgeprogram"></a>
+<a id="Camprogram"><div id="new" class="Cambridgeprogram"></a>
   <h1>Cambridge Program</h1>
   <button onclick="location.href='Cambridge Program.html'"id="cambridgeprogramexplore">Explore the Cambridge Program at JHS</button>
 </div>
@@ -318,16 +315,18 @@ li a:hover {
 	});
 	
 	</script>
+
 </div>
 
 <div>
 <a href="#Camprogram" class="Scrolltocambridge"><button id="scrolltosecondsection" class="button2" title="Go to bottom"></button></a>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script type="text/javascript">
-		$("a[href='#Camprogram']").click(function() {
-	  $("html, body").animate({ scrollTop: 783 }, "slow");
-	  return false;
-	});
+	<script type="text/javascript">	
+	$("a[href='#Camprogram']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Camprogram").offset().top
+    }, 1000);
+});
 	</script>
 </div>
 
