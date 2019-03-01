@@ -4,6 +4,11 @@
 	text-align: center;
   }
   
+  .ScienceEngineeringCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
   .MaterialsScienceTech1, .MaterialsScienceTech2, .MechanicalEngineering1, .MechanicalEngineering2, .ComputerScienceElectricalEngineering {
     width: 100%;
 	display: flex;

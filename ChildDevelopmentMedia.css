@@ -3,6 +3,11 @@
 	  font-size: 40px !important;
 	  text-align: center;
 	}
+	
+	.ChildDevelopmentCourses {
+	 background-attachment: scroll !important;
+	 object-fit: cover;
+	}
   
   .ChildDevelopmentInfo, .ChildDevelopmentInfo2 {
 	display: flex;

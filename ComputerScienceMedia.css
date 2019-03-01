@@ -4,6 +4,11 @@
 	text-align: center;
   }
   
+  .ComputerScienceCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
   .IntroCompSci, .ComputerScienceEngineering, .APComputerScience, .APComputerSciencePrinciples {
     width: 100%;
 	display: flex;

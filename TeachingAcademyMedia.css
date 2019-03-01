@@ -4,6 +4,11 @@
 	  text-align: center;
 	}
 	
+	.TeachingAcademy {
+	 background-attachment: scroll !important;
+	 object-fit: cover;
+	}
+	
 	.TeachingAcademyInfo {
 	  display: flex;
 	  flex-direction: column;

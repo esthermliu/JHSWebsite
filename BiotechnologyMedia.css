@@ -4,6 +4,11 @@
 	text-align: center;
   }
   
+  .BiotechnologyCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
   .BiotechnologyInfo {
     width: 100%;
 	display: flex;

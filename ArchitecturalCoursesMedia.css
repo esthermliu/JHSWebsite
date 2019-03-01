@@ -4,6 +4,11 @@
 	text-align: center;
   }
   
+  .ArchitecturalCourses {
+      background-attachment: scroll !important;
+	  object-fit: cover;
+  }
+  
   .ArchitectConstruction, .ArchitecturalDrawing {
     width: 100%;
 	display: flex;

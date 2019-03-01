@@ -21,4 +21,8 @@
 	  font-size: 30px;
   }
   
+  .MicrosoftImagineAcademy {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
 }

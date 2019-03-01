@@ -3,6 +3,11 @@
     text-align: center;
   }
   
+  .InteriorDesignCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
   .InteriorDesignInfo {
 	display: flex;
 	flex-direction: column;

@@ -3,6 +3,11 @@
     font-size: 40px !important;
   }
   
+  .Personalfinancebackground {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
   .PersonalFinance, .Career {
 	display: flex;
 	align-items: center;

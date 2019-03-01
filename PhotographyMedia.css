@@ -4,6 +4,11 @@
 	  text-align: center;
 	}
 	
+	.PhotographyCourses {
+	 background-attachment: scroll !important;
+	 object-fit: cover;
+	}
+	
 	.PhotographyInfo, .AppliedPhotography1, .AppliedPhotography2 {
 	  width: 100%;
 	  display: flex;
