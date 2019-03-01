@@ -142,4 +142,8 @@
     display: none;
   }
   
+  .LandingTSA {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
 }
