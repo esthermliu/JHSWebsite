@@ -33,9 +33,6 @@
 	image-orientation: from-image;
   }
   
-  .WrongSide {
-    transform: rotate(90deg) !important;
-  }
   
 }
   
