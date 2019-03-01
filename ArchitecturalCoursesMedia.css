@@ -1,0 +1,21 @@
+@media screen and (max-width: 414px) {
+  .ArchitecturalCourses h1 {
+    font-size: 50px !important;
+	text-align: center;
+  }
+  
+  .ArchitectConstruction, .ArchitecturalDrawing {
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
+  
+   .ArchitectConstruction p, .ArchitecturalDrawing p {
+    width: 90%;
+	
+  
+  }
+  
+ }
