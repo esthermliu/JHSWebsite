@@ -3,6 +3,9 @@
 <head>
   <title>Technology Education Courses</title>
   <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+    <link rel="stylesheet" media="screen and (max-width: 414px)" href="TechnologyEducationMedia.css">
 </head>
 <style>
   * {
@@ -83,6 +86,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+  overflow: hidden;
  }
  
  .leftnav {
@@ -211,6 +215,14 @@ a {
   z-index: -99;
   overflow: hidden;
  }
+ 
+ .Hamburger {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
  </style>
 <script src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
 <script>
@@ -237,11 +249,47 @@ a {
 	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
     </ul>
   </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a class="active" href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="MusicAlbum2.html">Cambridge Program</a>
+	 </div>
+	<a href="esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </header>
 <div>
 
 </div>
 <div class="overallbody">
+  <div class="slideShowContainer">
+	  <img src="MaterialScience.png"/>
+	  <img src="ComputerScience.png"/>
+	  <img src="Laserprinter.png"/>
+	  <img src="ScienceRoom.png"/>
+	  <img src="ScienceRoomTables.png"/>
+  </div>
   <div class="leftnav">
 	  <a class="Photography" href="Photography.html"><p>Photography</p></a>
 	  <a class="Architect" href="ArchitecturalCourses.html"><p></p>Architectural Courses</a>
@@ -250,13 +298,7 @@ a {
 	  <a class="ScienceEngineering" href="ScienceEngineering.html"><p>Science and Engineering</p></a>
 	  <a class="FineArtsCourses" href="FineArts.html"><p>Fine Arts Courses</p></a>
   </div>
-  <div class="slideShowContainer">
-	  <img src="MaterialScience.png"/>
-	  <img src="ComputerScience.png"/>
-	  <img src="Laserprinter.png"/>
-	  <img src="ScienceRoom.png"/>
-	  <img src="ScienceRoomTables.png"/>
-  </div>
+
 </div>
 
 
