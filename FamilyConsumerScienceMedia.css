@@ -34,7 +34,7 @@
   }
   
   .WrongSide {
-    image-orientation: 90deg !important;
+    transform: rotate(90deg) !important;
   }
   
 }
