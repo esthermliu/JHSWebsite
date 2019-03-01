@@ -33,7 +33,9 @@
 	image-orientation: from-image;
   }
   
-
+  .WrongSide {
+    image-orientation: 90deg !important;
+  }
   
 }
   
