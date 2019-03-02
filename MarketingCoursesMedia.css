@@ -4,6 +4,11 @@
 	text-align: center;
   }
   
+  .Marketingcoursesbackground {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
   .Marketing1, .Marketing2 {
     width: 100% !important;
 	display: flex;
